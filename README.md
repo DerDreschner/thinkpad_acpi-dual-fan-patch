@@ -1,5 +1,5 @@
 # Change whitelisted ThinkPads for dual fan mode
-The thinkpad_acpi kernel module doesn't allow every ThinkPad with dual fans to control them seperatly. Only some whitelisted models are allowed for compatbility reasons.
+The thinkpad_acpi kernel module doesn't allow every ThinkPad with dual fans to control them seperatly. Only some whitelisted models are allowed for compatibility reasons.
 
 This dmks module manipulates the list to include multiple newer ThinkPad models.
 
