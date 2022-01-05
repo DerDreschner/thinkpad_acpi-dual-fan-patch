@@ -28,7 +28,7 @@ sed -i 's/\(#define TPACPI_VERSION "0\.26\)/\1\.1/' thinkpad_acpi.c
 # Make changes to whitelisted bios versions for dual fan mode
 echo "Make changes to thinkpad_acpi.c"
 
-sed -i "/P1 / X1 Extreme (2nd gen)/a \	TPACPI_Q_LNV3('N', '3', '7', TPACPI_FAN_2CTL),  /* P15 / P17 / T15g (2nd gen) */" thinkpad_acpi.c
+sed -i "/P1 \/ X1 Extreme (2nd gen)/a \	TPACPI_Q_LNV3('N', '3', '7', TPACPI_FAN_2CTL),  /* P15 / P17 / T15g (2nd gen) */" thinkpad_acpi.c
 sed -i "/P15 \/ P17 \/ T15g (2nd gen)/a \	TPACPI_Q_LNV3('N', '3', '8', TPACPI_FAN_2CTL),  /* P15v / T15p (2nd gen) */" thinkpad_acpi.c
 
 # Check if changes were applied correctly
